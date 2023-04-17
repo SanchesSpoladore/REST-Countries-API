@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rest Countries</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Where in the world?</h1>
+
+    <button onclick="darkMode()">
+      <img src="./img/dark-black.svg" alt="Icon of dark" class="icon">
+      <img src="./img/dark-white.svg" alt="Icon of dark" class="icon hider">
+      Dark mode
+    </button>
+  </header>
+
+  <nav>
+    <div class="search-area">
+      <img src="img/search-black.svg" alt="Icon of search" class="icon">
+      <img src="./img/search-white.svg" alt="Icon of dark" class="icon hider">
+      <input type="text" class="search" placeholder="Search for a country...">
+    </div>
+
+    <div class="dropDownContainer">
+      <button class="dropDown">
+        <span class="regions">Filter By Region</span>
+        <img src="./img/expand-black.svg" alt="Icon of expand" class="icon">
+        <img src="./img/expand-white.svg" alt="Icon of dark" class="icon hider">
+      </button>
+
+      <div class="drop">
+        <p class="region">All</p>
+        <p class="region">Africa</p>
+        <p class="region">America</p>
+        <p class="region">Asia</p>
+        <p class="region">Europe</p>
+        <p class="region">Oceania</p>
+      </div>
+    </div>
+  </nav>
+
+  <main class="countries">
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
